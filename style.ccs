@@ -356,3 +356,26 @@ footer p {
     margin: 0 auto;
   }
 }
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  margin-bottom: 22px;
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid var(--border);
+  padding: 12px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.info-table th {
+  background: var(--accent-light);
+  color: var(--accent);
+}
