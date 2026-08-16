@@ -5,38 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Photos | Shawn's Known Donor Profile</title>
   <meta name="description" content="Photo gallery for Shawn's known donor profile.">
-  <meta name="theme-color" content="#173b3a">
+  <meta name="theme-color" content="#1f2937">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="index.html" aria-label="Shawn donor profile home"><span class="brand-mark" aria-hidden="true">S</span><span><strong>Shawn</strong><small>Known donor profile</small></span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
-      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
-        <a href="index.html">Overview</a><a href="info.html">About me</a><a href="result.html">Screening</a><a href="why.html">Values & boundaries</a><a class="nav-cta" href="mailto:profile.contact.shawn@gmail.com?subject=Known%20donor%20introduction">Get in touch</a>
+    <div class="container header-row">
+      <a class="brand" href="index.html">Shawn <span>Known Donor Profile</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Overview</a>
+        <a href="info.html">About</a>
+        <a href="why.html">Donation</a>
+        <a href="result.html">Health & Results</a>
+        <a class="active" aria-current="page" href="photos.html">Photos</a>
+        <a href="mailto:profile.contact.shawn@gmail.com?subject=Known%20donor%20introduction">Contact</a>
       </nav>
     </div>
   </header>
   <main id="main">
-    <header class="page-hero">
-      <div class="section-shell reveal">
-        <p class="eyebrow"><span></span> Photos</p>
-        <h1>Photo gallery</h1>
-        <p>Photos will be added here soon.</p>
+    <header class="page-header">
+      <div class="container narrow">
+        <p class="label">Gallery</p>
+        <h1>Photos</h1>
+        <p>Photos will be added later.</p>
       </div>
     </header>
-    <div class="interior-main section-shell">
-      <div class="photo-empty reveal" aria-label="Photo gallery awaiting photos">
-        <span>Photos coming soon</span>
+    <section class="section">
+      <div class="container">
+        <div class="empty-gallery" aria-label="Photo gallery awaiting uploads"></div>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="site-footer">
-    <div class="section-shell footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span><strong>Shawn</strong><small>Known donor profile</small></span></a></div><div class="footer-links"><a href="index.html">Overview</a><a href="info.html">About</a><a href="result.html">Screening</a><a href="why.html">Values</a></div><p class="footer-disclaimer">This profile is an introduction, not medical or legal advice. Any donation is subject to clinic requirements, independent professional review, and a signed agreement.</p></div>
-    <div class="section-shell footer-bottom"><span>© <span data-year>2026</span> Shawn. All rights reserved.</span><span>Made with care, clarity, and respect.</span></div>
+    <div class="container footer-row">
+      <span>© <span data-year>2026</span> Shawn</span>
+      <span>Medical and legal review required before any donation.</span>
+    </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
