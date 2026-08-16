@@ -1,157 +1,89 @@
-<!-- information.html -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Information | Donor Shawn</title>
-  <meta name="description" content="More information about Donor Shawn, known donor profile." />
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Shawn | Known Donor Profile</title>
+  <meta name="description" content="Learn about Shawn's family background, education, interests, and active lifestyle.">
+  <meta name="theme-color" content="#173b3a">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <h1>Information</h1>
-      <p class="hero-text">
-        More information about me, still building...
-      </p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Shawn donor profile home"><span class="brand-mark" aria-hidden="true">S</span><span><strong>Shawn</strong><small>Known donor profile</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Overview</a><a class="active" href="info.html" aria-current="page">About me</a><a href="result.html">Screening</a><a href="why.html">Values & boundaries</a><a class="nav-cta" href="mailto:profile.contact.shawn@gmail.com?subject=Known%20donor%20introduction">Get in touch</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <div class="page-layout">
+  <main id="main">
+    <header class="page-hero">
+      <div class="section-shell reveal">
+        <p class="eyebrow"><span></span> Beyond the quick facts</p>
+        <h1>A curious mind, an active life, and strong family roots.</h1>
+        <p>I hope this page gives you a more human sense of who I am—what shaped me, what I care about, and how I move through the world.</p>
+      </div>
+    </header>
 
-      <aside class="sidebar">
-        <h3>Profile Menu</h3>
+    <div class="interior-main section-shell content-grid">
+      <div class="content-stack">
+        <section class="content-card reveal">
+          <p class="eyebrow"><span></span> Where I come from</p>
+          <h2>Raised with support and room to explore</h2>
+          <p>I grew up close to an extended family, surrounded by friends and cousins. My family was warm, supportive, and encouraging of new experiences. My mother’s care and my father’s thoughtful perspective both shaped me; together, they gave me curiosity, a love of learning, and confidence to follow ideas seriously.</p>
+          <p>That background is part of why I approach donation with care. Family is not an abstract idea to me—it is the everyday work of showing up, listening, and giving someone space to become themselves.</p>
+        </section>
 
-        <a href="index.html">Home</a>
-        <a class="active" href="info.html">More Information</a>
-        <a href="photos.html">Photos</a>
-        <a href="result.html">Medical / Test Results</a>
-        <a href="why.html">Motivation</a>
+        <section class="content-card reveal">
+          <p class="eyebrow"><span></span> Education & research</p>
+          <h2>I’ve always been drawn to difficult questions.</h2>
+          <ol class="timeline-list">
+            <li><h3>Early academic interests</h3><p>Mathematics and physics first taught me the pleasure of finding structure inside something complicated. I earned a top 1% score on the college entrance exam and received awards in math and physics competitions.</p></li>
+            <li><h3>Undergraduate engineering</h3><p>I earned a bachelor’s degree in Telecommunications Engineering, building foundations in mathematics, programming, signal processing, and control. I also participated in mathematical modeling and electrical design competitions.</p></li>
+            <li><h3>Graduate study & research</h3><p>I am now pursuing graduate study and research in electrical and computer engineering. Research suits my temperament: patient, curious, and willing to keep working when an answer is not obvious.</p></li>
+          </ol>
+        </section>
+
+        <section class="content-card reveal">
+          <p class="eyebrow"><span></span> Life outside work</p>
+          <h2>Movement keeps me balanced.</h2>
+          <p>Basketball has been a long-term part of my life, including school teams in high school and college. I also enjoy swimming, gym training, running, tennis, and trying new outdoor activities. Staying active gives me energy and keeps academic life in perspective.</p>
+          <p>Beyond sports, I enjoy history, applied mathematics, learning how systems work, good conversations, and time with people close to me.</p>
+          <div class="pill-grid" aria-label="Personal interests"><span>Basketball</span><span>Swimming</span><span>Fitness</span><span>Running</span><span>Mathematics</span><span>Research</span><span>History</span><span>Travel & outdoors</span></div>
+        </section>
+
+        <section class="content-card quote-card reveal">
+          <blockquote>“The qualities I hope to pass on are not only intellectual curiosity, but warmth, resilience, and the confidence to explore.”</blockquote>
+          <cite>Shawn · Known donor profile</cite>
+        </section>
+      </div>
+
+      <aside class="side-card reveal" aria-label="Quick profile facts">
+        <p class="eyebrow light"><span></span> Quick profile</p>
+        <h2>At a glance</h2>
+        <p>A concise snapshot. More personal details can be discussed privately as we get to know one another.</p>
+        <ul class="fact-list">
+          <li><span>Life stage</span><strong>Early twenties</strong></li>
+          <li><span>Background</span><strong>Asian</strong></li>
+          <li><span>Height</span><strong>6′1″ / 185 cm</strong></li>
+          <li><span>Hair</span><strong>Black</strong></li>
+          <li><span>Build</span><strong>Active / athletic</strong></li>
+          <li><span>Education</span><strong>Graduate student</strong></li>
+          <li><span>Location</span><strong>Southern California</strong></li>
+        </ul>
+        <a class="button button-light full-width" href="photos.html">Photo-sharing approach <span aria-hidden="true">→</span></a>
       </aside>
-
-<div class="content">
-
-  <section>
-    <h2>Education & Background</h2>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <h3>High School</h3>
-        <p class="meta"></p>
-        <p>
-          During high school, I developed strong interests in mathematics,
-          science, sports, and history. I also participated in school activities
-          and athletic events.
-        </p>
-
-        <ul class="achievement-list">
-          <li>Top 1% score in college entrance exam(Gao Kao)</li>
-          <li>First prize in math competition.</li>
-          <li>Third prize in physics competition.</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item">
-        <h3>College</h3>
-        <p class="meta"></p>
-        <p>
-          In college, I studied engineering and built a strong foundation in
-          mathematics, programming, signal processing, and control-related topics.
-        </p>
-
-        <ul class="achievement-list">
-          <li>Bachelor’s degree in Telecommunications Engineering</li>
-          <li>First prize in mathematical competition </li>
-          <li>First prize in math modeling competition </li>
-          <li>Second prize in electrical design competition </li>
-          <li>Research</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item">
-        <h3>Graduate Study</h3>
-        <p class="meta"></p>
-        <p>
-          I am currently doing research and pursuing graduate study
-        </p>
-
-        <ul class="achievement-list">
-          <li>Ongoing academic and research development</li>
-        </ul>
-      </div>
-
     </div>
-  </section>
-
-  <section>
-    <h2>Atheletics</h2>
-
-    <div class="card-grid">
-
-      <div class="info-card">
-        <h3>Basketball</h3>
-        <p>
-          Basketball has been one of my long-term interests and a meaningful
-          part of my school life.
-        </p>
-      </div>
-
-      <div class="info-card">
-        <h3>Swimming & Fitness</h3>
-        <p>
-          I enjoy staying active through swimming, gym training, and other
-          physical activities.
-        </p>
-      </div>
-
-      <div class="info-card">
-        <h3>Sports Awards</h3>
-        <ul class="achievement-list">
-          <li>800m running in high school sports meeting</li>
-          <li>Basketball team in high school and college, various prices</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <section>
-    <h2>Personal Interests</h2>
-
-  </section>
-
-
-  <section>
-    <h2>More Details</h2>
-
-    <p>
-      To learn more about medical screening and test results, click
-      <a href="result.html">here</a>.
-    </p>
-
-    <p>
-      To understand my motivation and expectations, click
-      <a href="why.html">here</a>.
-    </p>
-
-    <p>
-      To contact me, click
-      <a href="mailto:profile.shawn.contact@gmail.com">here</a>.
-    </p>
-  </section>
-
-</div>
   </main>
 
-  <footer>
-    <p>© 2026 Donor Shawn. Known donor profile.</p>
+  <footer class="site-footer">
+    <div class="section-shell footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span><strong>Shawn</strong><small>Known donor profile</small></span></a></div><div class="footer-links"><a href="index.html">Overview</a><a href="result.html">Screening</a><a href="why.html">Values</a><a href="photos.html">Photos & privacy</a></div><p class="footer-disclaimer">This profile is an introduction, not medical or legal advice. Any donation is subject to clinic requirements, independent professional review, and a signed agreement.</p></div>
+    <div class="section-shell footer-bottom"><span>© <span data-year>2026</span> Shawn. All rights reserved.</span><span>Made with care, clarity, and respect.</span></div>
   </footer>
 </body>
 </html>
