@@ -43,6 +43,8 @@ p { margin-bottom: 16px; }
 .hero { padding: 84px 0 76px; border-bottom: 1px solid var(--line); }
 .label { margin-bottom: 10px; color: var(--accent); font-size: 12px; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
 .lead { max-width: 700px; margin-bottom: 26px; color: var(--muted); font-size: 20px; }
+.notice-box { margin: 24px 0; padding: 16px 18px; border-left: 4px solid var(--accent); color: var(--text); background: var(--light); font-size: 15px; }
+.notice-box strong { color: var(--accent-dark); }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .button { display: inline-block; padding: 10px 16px; border: 1px solid var(--line); border-radius: 7px; color: var(--text); background: white; font-size: 14px; font-weight: 700; text-decoration: none; }
 .button:hover { border-color: #aeb7c2; background: var(--light); }
@@ -62,6 +64,8 @@ p { margin-bottom: 16px; }
 .facts dd, .rows dd { margin: 0; }
 .rows { margin: 0; border-top: 1px solid var(--line); }
 .rows div { padding: 13px 0; display: grid; grid-template-columns: 125px 1fr; gap: 18px; border-bottom: 1px solid var(--line); }
+.important-rows div { padding-block: 16px; }
+.important-rows dt { color: var(--accent-dark); }
 .rows dt { margin: 2px 0 0; }
 .steps { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; list-style: none; counter-reset: steps; }
 .steps li { padding-top: 16px; border-top: 3px solid var(--accent); counter-increment: steps; }
@@ -121,4 +125,3 @@ p { margin-bottom: 16px; }
   .footer-row { flex-direction: column; }
   .empty-gallery { min-height: 300px; }
 }
-
