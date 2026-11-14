@@ -6,140 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Shawn's known sperm donor profile. Frozen IUI vials available with no donor fee.">
   <title>Shawn | Known Donor</title>
-
-  <style>
-    :root {
-      font-family: system-ui, -apple-system, sans-serif;
-      color: #253044;
-      background: #fff;
-      line-height: 1.7;
-    }
-
-    * { box-sizing: border-box; }
-
-    body { margin: 0; }
-
-    .container {
-      max-width: 820px;
-      margin: auto;
-      padding: 0 24px;
-    }
-
-    header, footer {
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 14px;
-    }
-
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    nav a { color: #475569; }
-
-    .brand {
-      font-weight: 700;
-      color: #1e293b;
-      font-size: 20px;
-    }
-
-    main { padding: 48px 0 64px; }
-
-    section { margin-bottom: 48px; }
-
-    h1, h2 {
-      line-height: 1.3;
-      color: #111827;
-    }
-
-    h1 {
-      font-size: clamp(28px, 5vw, 38px);
-      letter-spacing: -0.03em;
-      margin: 0 0 20px;
-    }
-
-    h2 {
-      font-size: 21px;
-      margin: 0 0 16px;
-    }
-
-    p { margin: 0 0 16px; }
-
-    .lead {
-      font-size: 18px;
-      color: #475569;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 22px;
-      margin: 8px 12px 0 0;
-      border-radius: 6px;
-      background: #2563eb;
-      color: white;
-      font-weight: 600;
-    }
-
-    .button:hover {
-      background: #1d4ed8;
-      text-decoration: none;
-    }
-
-    .secondary {
-      background: #f1f5f9;
-      color: #334155;
-    }
-
-    .secondary:hover { background: #e2e8f0; }
-
-    dl { margin: 0; }
-
-    dl div {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 16px;
-      padding: 12px 0;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    dt { font-weight: 600; }
-    dd { margin: 0; color: #475569; }
-
-    ol { padding-left: 24px; }
-    li { margin-bottom: 12px; }
-
-    footer {
-      border-top: 1px solid #e5e7eb;
-      border-bottom: 0;
-      padding: 24px 0;
-      color: #64748b;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      main { padding-top: 32px; }
-      section { margin-bottom: 36px; }
-      dl div { grid-template-columns: 1fr; gap: 2px; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -158,30 +25,85 @@
 
   <main class="container">
 
-    <section>
-      <h1>Known Sperm Donor — No Donor Fee</h1>
-      <p class="lead">
-        Hi, I'm Shawn, a 22-year-old graduate student and
-        researcher in Southern California.
-      </p>
-      <p>
-        I have frozen IUI sperm vials available to intended
-        parents of all backgrounds, including LGBTQ+ families
-        and single parents.
-      </p>
-      <p>
-        There is no donor fee or charge for the vials.
-        Recipients cover applicable legal, medical, and shipping costs.
-      </p>
-      <a class="button" href="mailto:profile.contact.shawn@gmail.com">
-        Get in Touch
-      </a>
-      <a class="button secondary" href="result.html">
-        Health & Results
-      </a>
+    <!-- Introduction and photos -->
+    <section class="hero-layout" id="intro">
+      <div class="hero-copy">
+        <h1>Known Sperm Donor — No Donor Fee</h1>
+
+        <p class="lead">
+          Hi, I'm Shawn, a 22-year-old graduate student
+          and researcher in Southern California.
+        </p>
+
+        <p>
+          I have frozen IUI sperm vials available to intended
+          parents of all backgrounds, including LGBTQ+
+          families and single parents.
+        </p>
+
+        <p>
+          There is no donor fee or charge for the vials.
+          Recipients cover applicable legal, medical,
+          and shipping costs.
+        </p>
+
+        <a class="button" href="mailto:profile.contact.shawn@gmail.com">
+          Get in Touch
+        </a>
+        <a class="button secondary" href="result.html">
+          Health &amp; Results
+        </a>
+      </div>
+
+      <!-- Six homepage photos -->
+      <div class="hero-photos" id="photos" aria-label="Photo gallery">
+        <div class="hero-photo-grid">
+
+          <div class="hero-photo-slot portrait-main">
+            <div class="photo-placeholder" role="img" aria-label="Portrait placeholder">
+              Portrait
+            </div>
+          </div>
+
+          <div class="hero-photo-slot">
+            <div class="photo-placeholder" role="img" aria-label="Full-body photo placeholder">
+              Full-body
+            </div>
+          </div>
+
+          <div class="hero-photo-slot">
+            <div class="photo-placeholder" role="img" aria-label="Outdoor photo placeholder">
+              Outdoors
+            </div>
+          </div>
+
+          <div class="hero-photo-slot">
+            <div class="photo-placeholder" role="img" aria-label="Sports photo placeholder">
+              Sports
+            </div>
+          </div>
+
+          <div class="hero-photo-slot">
+            <div class="photo-placeholder" role="img" aria-label="Casual photo placeholder">
+              Casual
+            </div>
+          </div>
+
+          <div class="hero-photo-slot">
+            <div class="photo-placeholder" role="img" aria-label="Additional photo placeholder">
+              Another photo
+            </div>
+          </div>
+
+        </div>
+
+        <p class="more-photos">
+          <a href="photos.html">More photos →</a>
+        </p>
+      </div>
     </section>
 
-    <section>
+    <section class="content-section">
       <h2>Donation Details</h2>
       <dl>
         <div>
@@ -203,17 +125,29 @@
       </dl>
     </section>
 
-    <section>
+    <section class="content-section">
       <h2>How It Works</h2>
       <ol>
-        <li><strong>Connect:</strong> Share your background, location, and family-building plans.</li>
-        <li><strong>Discuss:</strong> Get to know each other and agree on expectations.</li>
-        <li><strong>Finalize:</strong> Sign an agreement and complete clinic requirements.</li>
-        <li><strong>Ship:</strong> Arrange shipment once approved by the clinic.</li>
+        <li>
+          <strong>Connect:</strong>
+          Share your background, location, and family-building plans.
+        </li>
+        <li>
+          <strong>Discuss:</strong>
+          Get to know each other and agree on expectations.
+        </li>
+        <li>
+          <strong>Finalize:</strong>
+          Sign an agreement and complete clinic requirements.
+        </li>
+        <li>
+          <strong>Ship:</strong>
+          Arrange shipment once approved by the clinic.
+        </li>
       </ol>
     </section>
 
-    <section>
+    <section class="content-section">
       <h2>About Me</h2>
       <p>
         I'm 185 cm (6'1"), with black hair. I hold a bachelor's
@@ -224,7 +158,7 @@
       <p><a href="info.html">More about me →</a></p>
     </section>
 
-    <section>
+    <section class="content-section">
       <h2>Contact</h2>
       <p>
         Feel free to introduce yourself and share your plans.
