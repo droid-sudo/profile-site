@@ -952,3 +952,147 @@ p {
     font-size: 11px;
   }
 }
+
+/* =====================================
+   About Page
+===================================== */
+
+.about-page .page-header {
+  padding: 44px 0 24px;
+  border-bottom: 0;
+  background: var(--white);
+}
+
+.about-page .page-header h1 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 42px);
+}
+
+.about-page .section {
+  padding: 28px 0 36px;
+}
+
+.about-page .section + .section {
+  border-top: 1px solid var(--line);
+}
+
+.about-page .section h2 {
+  font-size: clamp(22px, 2.5vw, 28px);
+}
+
+.about-page .facts {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  border: 0;
+}
+
+.about-page .facts > div {
+  min-height: 84px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.about-page .facts dt {
+  margin-bottom: 5px;
+}
+
+.about-page .facts dd {
+  font-weight: 600;
+}
+
+.about-page .education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-page .education-card,
+.about-page .about-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+}
+
+.about-page .education-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: var(--accent-dark);
+  background: var(--light);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.about-page .education-card h3 {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.about-page .education-card p,
+.about-page .about-card p,
+.about-page .about-card li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.about-page .education-card p:last-child,
+.about-page .about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .education-card a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-page .education-card a:hover {
+  text-decoration: underline;
+}
+
+.about-page .education-detail {
+  color: var(--muted);
+}
+
+.about-page .about-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-page .about-card .plain-list {
+  padding-left: 18px;
+}
+
+@media (max-width: 820px) {
+  .about-page .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-page .about-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-page .page-header {
+    padding: 32px 0 16px;
+  }
+
+  .about-page .section {
+    padding: 22px 0 30px;
+  }
+
+  .about-page .education-card,
+  .about-page .about-card {
+    padding: 18px;
+  }
+}
