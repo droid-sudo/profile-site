@@ -909,9 +909,11 @@ p {
   color: var(--muted);
   font-size: 13px;
   line-height: 1.5;
-  white-space: nowrap;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 @media (max-width: 980px) {
