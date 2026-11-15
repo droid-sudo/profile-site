@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Me</title>
-  <meta name="description" content="Basic profile, education, family background, sports, and interests.">
+  <title>About Me | Shawn</title>
+  <meta name="description" content="Shawn's background, education, sports, and interests.">
   <meta name="theme-color" content="#1f2937">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="about-page">
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container header-row">
       <a class="brand" href="index.html">Shawn <span>Known Donor Profile</span></a>
@@ -18,27 +19,27 @@
         <a href="index.html">Overview</a>
         <a class="active" aria-current="page" href="info.html">About</a>
         <a href="why.html">Donation</a>
-        <a href="result.html">Health & Results</a>
+        <a href="result.html">Health &amp; Results</a>
         <a href="photos.html">Photos</a>
         <a href="mailto:profile.contact.shawn@gmail.com?subject=Known%20donor%20introduction">Contact</a>
       </nav>
     </div>
   </header>
+
   <main id="main">
     <header class="page-header">
-      <div class="container narrow">
-        <p class="label">Profile</p>
-        <h1>About Shawn</h1>
+      <div class="container">
+        <h1>About Me</h1>
       </div>
     </header>
 
-    <section class="section">
+    <section class="section" aria-labelledby="basic-heading">
       <div class="container">
-        <h2>Basic information</h2>
+        <h2 id="basic-heading">Basic Information</h2>
         <dl class="facts">
           <div><dt>Age</dt><dd>23</dd></div>
           <div><dt>Height</dt><dd>6′1″ / 185 cm</dd></div>
-          <div><dt>Ethnicity</dt><dd>Asian</dd></div>
+          <div><dt>Ethnicity</dt><dd>Asian / Chinese</dd></div>
           <div><dt>Hair</dt><dd>Black</dd></div>
           <div><dt>Complexion</dt><dd>Light-medium</dd></div>
           <div><dt>Location</dt><dd>Southern California</dd></div>
@@ -46,35 +47,54 @@
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="container two-columns">
-        <div>
-          <h2>Academic</h2>
-          <ul class="plain-list">
-            <li><strong>High school:</strong> Top 1% in College Entrance Exam(Gao Kao); Awards in Mathematics and Physics Competitions.</li>
-            <li><strong>Bachelor’s degree:</strong> Telecommunications Engineering @ Sichuan University.</li>
-            <li><strong>Graduate study:</strong> Master in Science(Electrical and Computer Engineering) @UC San Diego</li>
-          </ul>
+    <section class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 id="education-heading">Education</h2>
+        <div class="education-grid">
+          <article class="education-card">
+            <span class="education-label">High School</span>
+            <h3>Academic Background</h3>
+            <p>Top 1% in the Gaokao (China's national college entrance examination), with awards in mathematics and physics competitions.</p>
+          </article>
+
+          <article class="education-card">
+            <span class="education-label">Bachelor's Degree</span>
+            <h3>Telecommunications Engineering</h3>
+            <p><a href="https://en.scu.edu.cn/index.htm" target="_blank" rel="noopener noreferrer">Sichuan University ↗</a></p>
+            <p class="education-detail">B.S. in Telecommunications Engineering</p>
+          </article>
+
+          <article class="education-card">
+            <span class="education-label">Master's Degree · In Progress</span>
+            <h3>Electrical and Computer Engineering</h3>
+            <p><a href="https://ucsd.edu/" target="_blank" rel="noopener noreferrer">University of California San Diego ↗</a></p>
+            <p class="education-detail">M.S. in Electrical and Computer Engineering</p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <section class="section">
-      <div class="container two-columns">
-        <div>
-          <h2>Sports</h2>
-          <ul class="plain-list">
-            <li>Basketball teams in high school and college</li>
-            <li>High-school 800 m running award</li>
-            <li>Regular swimming and fitness training</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Interests</h2>
-          <p>Mathematics, research, robotics, basketball, swimming, fitness, history, and outdoor activities.</p>
+    <section class="section" aria-labelledby="personal-heading">
+      <div class="container">
+        <h2 id="personal-heading">Beyond Academics</h2>
+        <div class="about-columns">
+          <div class="about-card">
+            <h3>Sports</h3>
+            <ul class="plain-list">
+              <li>Played on basketball teams in high school and college.</li>
+              <li>Won a prize in the men's 800-meter race at a high-school sports meet.</li>
+              <li>Regular swimming and fitness training.</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <h3>Interests</h3>
+            <p>Mathematics, research, robotics, basketball, swimming, fitness, history, and outdoor activities.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-row">
       <span>© <span data-year>2026</span> Shawn</span>
